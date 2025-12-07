@@ -861,8 +861,9 @@
     <section id="about" style="padding: 24px; text-align:center;">
         <h2>About</h2>
         <p style="max-width:860px; margin: 12px auto;">
-            This demo combines your Home, Menu, Restaurants, Cart and Contact pages into a single file so it's easy to open in VSCode.
-            Replace text/images with your own content as needed.
+             Our platform makes food ordering simple and enjoyable. 
+           Browse from different meals, customize your quantity, and review your cart instantly. Once you're ready, proceed to checkout and provide your delivery details in one step.
+            This demo shows how a real food-ordering workflow works in an easy-to-understand layout.
         </p>
     </section>
 
