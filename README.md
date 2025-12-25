@@ -578,7 +578,6 @@
     .qty-btn:hover {
         background: #eee;
     }
-
     .remove-item-btn {
         border: none;
         background: none;
@@ -613,7 +612,6 @@
         margin-top: 8px;
         gap: 6px;
     }
-
     .empty-text {
         font-size: 0.9rem;
         color: #555;
@@ -713,20 +711,17 @@
         gap: 12px;
         font-size: 0.9rem;
     }
-
-    .payment-options label {
+     .payment-options label {
         display: flex;
         align-items: center;
         gap: 6px;
         cursor: pointer;
     }
-
     .upi-note {
         font-size: 0.8rem;
         color: #555;
         margin-top: 2px;
     }
-
     /* Responsive tweaks */
     @media only screen and (max-width: 900px) {
         #container1::before {
