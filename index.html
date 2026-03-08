@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online FoodShop</title>
+    
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href = "style.css">
+
+  </head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 id="top">Online</h1>
+        <h1 id="top1">FoodShop</h1>
+    </header>
+
+    <hr>
+
+    <!-- Navigation -->
+    <nav id="navbar" role="navigation" aria-label="Main Navigation">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240711123257/jpeg-optimizer_2151336570.jpg" alt="Online FoodShop logo">
+        <ul id="navcontent">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#restaurants">Restaurants</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home / Hero -->
+    <main id="home">
+        <section id="container1" aria-labelledby="row1">
+            <div id="row1">Welcome to Online FoodShop</div>
+            <button class="btn" id="hero-order-btn">ORDER NOW</button>
+
+            <div id="container3">
+                <div id="row2">
+                    <img class="tile-image" src="https://media.geeksforgeeks.org/wp-content/uploads/20240711123257/jpeg-optimizer_2151336570.jpg" alt="Prices banner">
+                    <button class="btn" id="prices-btn">Prices</button>
+                </div>
+
+                <div id="row3">
+                    <img class="tile-image" src="https://media.geeksforgeeks.org/wp-content/uploads/20240711123256/jpeg-optimizer_6656747_21351.jpg" alt="Special offers">
+                    <button class="btn" id="specials-btn">Specials</button>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <h1 id="top3">Featured Products</h1>
+
+        <section id="container4" aria-label="Featured products">
+            <div id="row4">
+                <button class="btn order-btn" data-item-id="16">ORDER NOW</button>
+            </div>
+            <div id="row5">
+                <button class="btn order-btn" data-item-id="19">ORDER NOW</button>
+            </div>
+            <div id="row6">
+                <button class="btn order-btn" data-item-id="22">ORDER NOW</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Specials Section -->
+    <section id="specials">
+        <div class="section-wrapper">
+            <h2>Today's Specials</h2>
+            <p>Hand-picked favourites with limited-time prices.</p>
+            <div id="specials-list" class="menu-grid"></div>
+        </div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section id="restaurants">
+        <div class="section-wrapper">
+            <h2>Restaurants Near You</h2>
+            <p>Choose a restaurant and explore their curated menu.</p>
+            <div id="restaurant-list" class="restaurant-grid">
+                <!-- JS fills this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu section -->
+    <section id="menu" style="padding-top: 12px;">
+        <div class="section-wrapper">
+            <div class="menu-header">
+                <h2>Full Menu</h2>
+                <div class="filter-group">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Pizza">Pizza</button>
+                    <button class="filter-btn" data-category="Burger">Burger</button>
+                    <button class="filter-btn" data-category="Wraps">Wraps</button>
+                    <button class="filter-btn" data-category="Pasta">Pasta</button>
+                    <button class="filter-btn" data-category="Indian">Indian</button>
+                    <button class="filter-btn" data-category="Salad">Salad</button>
+                    <button class="filter-btn" data-category="Dessert">Dessert</button>
+                    <button class="filter-btn" data-category="Drinks">Drinks</button>
+                </div>
+            </div>
+            <p id="menu-restaurant-label" style="font-size:0.85rem;color:#555;margin-bottom:4px;"></p>
+            <div id="menu-items" class="menu-grid">
+                <!-- JS fills this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About stub -->
+    <section id="about" style="padding: 24px; text-align:center;">
+        <h2>About</h2>
+        <p style="max-width:860px; margin: 12px auto;">
+             Our platform makes food ordering simple and enjoyable. 
+           Browse from different meals, customize your quantity, and review your cart instantly. Once you're ready, proceed to checkout and provide your delivery details in one step.
+            This demo shows how a real food-ordering workflow works in an easy-to-understand layout.
+        </p>
+    </section>
+
+    <!-- Cart -->
+    <section id="cart" aria-label="Shopping cart">
+        <div id="cart-header">
+            <h2>Your Cart</h2>
+            <div>
+                <button id="clear-cart">Clear Cart</button>
+            </div>
+        </div>
+        <ul id="cart-items">
+            <!-- JS will render cart items -->
+        </ul>
+        <div id="cart-summary">
+            <span>Total Items: <span id="cart-count">0</span></span>
+            <span>Total: &#8377;<span id="cart-total">0</span></span>
+        </div>
+        <p class="empty-text" id="cart-empty-text">Your cart is empty. Start by adding something tasty!</p>
+        <div id="checkout-actions">
+            <button id="checkout-btn" disabled>Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <!-- Checkout / Final Step -->
+    <section id="checkout" aria-label="Final order details">
+        <h2>Final Step: Delivery Details</h2>
+        <div id="order-summary">
+            <strong>Your Order:</strong>
+            <ul id="checkout-items">
+                <!-- JS fills this -->
+            </ul>
+            <div>
+                Total Payable: &#8377;<span id="checkout-total">0</span>
+            </div>
+            <div id="estimate-time"></div>
+        </div>
+
+        <form id="checkout-form">
+            <div class="full-width">
+                <label for="cust-name">Full Name</label>
+                <input type="text" id="cust-name" name="custName" required placeholder="Enter your full name">
+            </div>
+            <div>
+                <label for="cust-mobile">Mobile Number</label>
+                <input type="tel" id="cust-mobile" name="custMobile" required pattern="[0-9+\-\s()]{7,20}" placeholder="10-digit mobile number">
+            </div>
+            <div>
+                <label for="cust-alt">Alternate Phone (optional)</label>
+                <input type="tel" id="cust-alt" name="custAlt" pattern="[0-9+\-\s()]{7,20}" placeholder="Optional alternate number">
+            </div>
+            <div class="full-width">
+                <label for="cust-address">Delivery Address</label>
+                <textarea id="cust-address" name="custAddress" required placeholder="Flat / House number, Street, Area"></textarea>
+            </div>
+            <div class="full-width">
+                <label for="cust-landmark">Landmark (optional)</label>
+                <input type="text" id="cust-landmark" name="custLandmark" placeholder="Near mall / school / temple etc.">
+            </div>
+
+            <!-- Payment method -->
+            <div class="full-width">
+                <label>Payment Method</label>
+                <div class="payment-options">
+                    <label>
+                        <input type="radio" name="paymentMethod" value="cash" checked>
+                        Cash on Delivery
+                    </label>
+                    <label>
+                        <input type="radio" name="paymentMethod" value="upi">
+                        UPI
+                    </label>
+                </div>
+            </div>
+
+            <div class="full-width" id="upi-details" style="display:none;">
+                <label for="upi-id">Your UPI ID</label>
+                <input type="text" id="upi-id" name="upiId" placeholder="example@upi">
+                <p class="upi-note">You will receive a payment request on this UPI ID after we confirm your order.</p>
+            </div>
+
+            <div class="full-width">
+                <button type="submit" id="place-order-btn">Place Order</button>
+            </div>
+        </form>
+        <div id="order-status"></div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" aria-labelledby="contact-heading">
+        <div id="ContactUs">
+            <h1 id="contact-heading">Contact Us</h1>
+            <form action="#" method="post" novalidate>
+                <div class="form-shape">
+                    <label for="query">Type of Query</label>
+                    <select name="myQuery" id="query" required>
+                        <option value="" selected>Select</option>
+                        <option value="ord">Order related Issues</option>
+                        <option value="site">Site related Issues</option>
+                        <option value="fed">Complaint related Issues</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-shape">
+                    <label for="name">Name</label>
+                    <input type="text" name="myName" id="name" placeholder="Enter your Name" required>
+                </div>
+
+                <div class="form-shape">
+                    <label for="email">Email-Id</label>
+                    <input type="email" name="myEmail" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-shape">
+                    <label for="pho">Phone Number</label>
+                    <input type="tel" name="myPhone" id="pho" placeholder="Enter your Phone no" pattern="[0-9+\-\s()]{7,20}">
+                </div>
+
+                <div id="radio" aria-label="Membership question">
+                    <span>Are you a member of OnlineFoodShop?</span>
+                    <label>
+                        <input type="radio" name="eligible" value="yes" required> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="eligible" value="no"> No
+                    </label>
+                </div>
+
+                <div class="form-shape">
+                    <label for="message">Elaborate your query</label>
+                    <textarea name="mesg" id="message" cols="30" rows="8" placeholder="Tell us more..."></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        Copyright © 2020-2021 OnlineFoodShop. All Rights are reserved
+    </footer>
+   <script src ="script.js"></script>
+</body>
+</html>
