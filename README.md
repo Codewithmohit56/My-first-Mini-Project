@@ -11,78 +11,68 @@ It demonstrates the fundamentals of front-end development, including responsive 
 Online FoodShop is designed to replicate a basic workflow of a modern food delivery website.
 Users can:
 
-Browse different restaurants
+⦿ Browse different restaurants
 
-View a dynamic menu
+⦿ View a dynamic menu
 
-Filter food by category
+⦿ Filter food by category
 
-Add food to a shopping cart
+⦿ Add food to a shopping cart
 
-Adjust quantity of items
+⦿ Adjust quantity of items
 
-View order summary
+⦿ View order summary
 
-Enter delivery details
+⦿ Enter delivery details
 
-Select payment method (Cash / UPI)
+⦿ Select payment method (Cash / UPI)
 
-The goal of this project is to practice real-world front-end concepts in a beginner-friendly way.
+This project provides hands-on experience with front-end development concepts while reinforcing core JavaScript skills.
 
 ✨ Features
 🏠 Home Section
 
-Welcome hero section
+• Welcome hero section
 
-Quick navigation buttons
+• Quick navigation buttons
 
-Featured products
-
-🍽 Restaurants
-
-Multiple restaurant cards
-
-Cuisine type and rating displayed
-
-Estimated delivery time
-
-Option to view menu for each restaurant
+• Featured products
 
 📋 Menu System
 
-Dynamic menu rendering using JavaScript
+• Dynamic menu rendering using JavaScript
 
-Filter by categories:
+• Filter by categories:
 
-Pizza
+        • Pizza
 
-Burger
+        • Burger
 
-Wraps
+        • Wraps
 
-Pasta
+        • Pasta
 
-Indian
+        • Indian
 
-Salad
+        • Salad
 
-Dessert
+        • Dessert
 
-Drinks
+        • Drinks
 
 Special items highlighted
 
 🛒 Cart Management
 
-Add items to cart
+• Add items to cart
 
-Increase / decrease quantity
+• Increase / decrease quantity
 
-Remove items
+• Remove items
 
-Clear entire cart
+• Clear entire cart
 
-Live cart total calculation
+• Live cart total calculation
 
 ⭐ Specials Section
 
@@ -90,37 +80,38 @@ Displays chef’s picks and special offers
 
 💳 Checkout System
 
-Order summary preview
+• Order summary preview
 
-Delivery time estimation
+• Delivery time estimation
 
-Customer details form
+• Customer details form
 
-Payment options:
+• Payment options:
 
-Cash on Delivery
+        • Cash on Delivery
 
-UPI
+        •UPI
 
 📞 Contact Form
 
 Users can send queries regarding:
 
-Orders
+• Orders
 
-Website issues
+• Website issues
 
-Complaints
+• Complaints
 
-Other feedback
+• feedback
 
 🧰 Technologies Used
-Technology	Purpose
-HTML5	Website structure
-CSS3	Styling and responsive design
-JavaScript (Vanilla)	Dynamic functionality
-Google Fonts	Typography
-Responsive Layout	Mobile-friendly design
+Technology	                     Purpose
+HTML5	                          Website structure
+CSS3	                      Styling and responsive design
+JavaScript (Vanilla)	          Dynamic functionality
+Google Fonts	                     Typography
+Responsive Layout	            Mobile-friendly design
+
 📂 Project Structure
 Online-FoodShop/
 │
@@ -136,9 +127,9 @@ Users select a restaurant to see its menu.
 
 2️⃣ Explore Menu
 
-Food items are dynamically loaded based on:
+• Food items are dynamically loaded based on:
 
-Selected restaurant
+• Selected restaurant
 
 Selected category filter
 
@@ -148,11 +139,11 @@ Click ORDER NOW to add items.
 
 Cart allows:
 
-Quantity adjustment
+• Quantity adjustment
 
-Item removal
+• Item removal
 
-Total calculation
+• Total calculation
 
 4️⃣ Checkout
 
@@ -166,11 +157,11 @@ A unique Order ID is generated when the order is placed.
 
 The website is optimized for:
 
-Desktop screens
+• Desktop screens
 
-Tablets
+• Tablets
 
-Mobile devices
+• Mobile devices
 
 CSS media queries ensure the layout adapts smoothly across devices.
 
@@ -178,41 +169,41 @@ CSS media queries ensure the layout adapts smoothly across devices.
 
 This project helped practice:
 
-DOM manipulation
+• DOM manipulation
 
-Event handling
+• Event handling
 
-Dynamic rendering
+• Dynamic rendering
 
-UI layout with CSS
+• UI layout with CSS
 
-Responsive web design
+• Responsive web design
 
-Cart logic implementation
+• Cart logic implementation
 
-Form validation
+• Form validation
 
-Basic user experience design
+• Basic user experience design
 
 🚀 Future Improvements
 
 Possible enhancements:
 
-Backend integration (Node.js / Express)
+• Backend integration (Node.js / Express)
 
-Database for storing orders
+• Database for storing orders
 
-User authentication
+• User authentication
 
-Payment gateway integration
+• Payment gateway integration
 
-Real-time order tracking
+• Real-time order tracking
 
-Admin dashboard for restaurants
+• Admin dashboard for restaurants
 
-Search functionality
+• Search functionality
 
-Dark mode UI
+• Dark mode UI
 
 📷 Demo Preview
 
@@ -222,20 +213,9 @@ index.html
 
 in your browser.
 
-👨‍💻 Author
-
-Developed as a front-end mini project to practice web development concepts.
-
 📜 License
 
 This project is open-source and free to use for learning and educational purposes.
 
-If you want, I can also give you:
+👨‍💻 Built with ❤️ by Mohit
 
-🔥 A more professional GitHub README (with badges, screenshots, and demo section)
-
-📸 Screenshot section for your project
-
-🌐 How to host it on GitHub Pages
-
-⭐ How to make this project look like a professional portfolio project.
