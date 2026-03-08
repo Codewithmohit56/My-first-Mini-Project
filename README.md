@@ -29,7 +29,8 @@ Users can:
 
 This project provides hands-on experience with front-end development concepts while reinforcing core JavaScript skills.
 
-✨ Features
+✨ Features <br>
+
 🏠 Home Section
 
 • Welcome hero section
@@ -60,7 +61,6 @@ This project provides hands-on experience with front-end development concepts wh
 
         • Drinks
 
-Special items highlighted
 
 🛒 Cart Management
 
@@ -90,7 +90,7 @@ Displays chef’s picks and special offers
 
         • Cash on Delivery
 
-        •UPI
+        • UPI
 
 📞 Contact Form
 
@@ -112,15 +112,17 @@ JavaScript (Vanilla)	          Dynamic functionality
 Google Fonts	                     Typography
 Responsive Layout	            Mobile-friendly design
 
-📂 Project Structure
-Online-FoodShop/
-│
-├── index.html        # Main project file
-├── README.md         # Project documentation
+📂 Project Structure <br>
+Online-FoodShop <br>
+├── index.html    <br>
+├── style.css      <br>
+├── script.js  <br>
+├── README.md      <br>   
 
 This project is currently a single-page application containing embedded CSS and JavaScript.
 
 ⚙️ How It Works
+<br>
 1️⃣ Browse Restaurants
 
 Users select a restaurant to see its menu.
@@ -131,7 +133,7 @@ Users select a restaurant to see its menu.
 
 • Selected restaurant
 
-Selected category filter
+• Selected category filter
 
 3️⃣ Add to Cart
 
