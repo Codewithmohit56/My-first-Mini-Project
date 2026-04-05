@@ -215,6 +215,9 @@ index.html
 
 in your browser.
 
+Contributing ->
+Feel free to contribute to this project by submitting issues or pull requests. Your feedback and suggestions are welcome!
+
 📜 License
 
 This project is open-source and free to use for learning and educational purposes.
